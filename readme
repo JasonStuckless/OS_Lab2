@@ -1,0 +1,27 @@
+*** START ***
+1. Linux terminal with gcc installed required.
+2. Open terminal and navigate to directory with shell files.
+3. Type "make" to run the makefile.
+4. Type "./myshell" to execute the shell.
+5. Type commands below to use supported internal commands.
+
+*** SUPPORTED INTERNAL COMMANDS ***
+cd <directory>: Change the current directory to <directory>.
+clr: Clears the screen.
+dir <directory>: List the contents of <directory>.  Leave <directory> blank to list current directory.
+environ: Gives a list of current environment strings.
+echo <string>: Displays <string> in terminal.
+help: Displays this user manual in terminal.
+pause: Pauses operation of the shell unter ENTER key is pressed.
+quit: Quits the shell.
+
+*** PROGRAM INVOCATION ***
+Command line input is interpreted as program invocation. Each command creates a child process
+that is executed after it is entered.  The parent process waits for the child to finish processing
+the command before it resumes.
+
+*** FILE-BASED COMMAND EXECUTION ***
+To instead run the shell with a file with a set of command lines, type "./myshell batchfile".
+This will iteratively run through all the commands found in the batch file, executing each
+individually, one at a time. The command line for the shell will not be displayed using
+this method.
